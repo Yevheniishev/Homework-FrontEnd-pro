@@ -35,4 +35,3 @@ console.log(pluck(characters, 'age'));
 
 
 
-
