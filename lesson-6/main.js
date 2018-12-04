@@ -116,3 +116,5 @@ console.log(burger1.getToppings());
 console.log(burger1.calculatePrice() + ' тугриков');
 console.log(burger1.calculateKk() + ' Kk');
 
+
+

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Interface-burger</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        }
+form {
+    display: block;
+    width: 350px;
+    margin: 15px auto 0;
+    }
+p {
+    margin-bottom: 8px;
+    }
+legend {
+    font-size: 17px;
+    display: block;
+    padding: 0 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    }
+.row {
+    border-bottom: 1px solid gray;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    }
+input[type=submit] { 
+    padding: 4px 15px 6px;
+    }
+#message {
+    height: 28px;
+    }
+label {
+    cursor:pointer;
+    }
+
+
+
+    
+    </style>
+</head>
+<body>
+    <form name="" action="" id="form">
+        <fieldset>
+            <h1>Create Hamburger</h1>
+            <div class="row">
+                <p>Choose Size</p>
+                <div class="radio-variant">
+                    <input type="radio" name="size" id="small" value="small" checked>
+                    <label for="small">Small</label>
+                </div>
+                <div class="radio-variant">
+                    <input type="radio" name="size" id="large" value="large" >
+                    <label for="large">Large</label>
+                </div>
+            </div>
+            <div class="row Stuffing">
+                <p>Choose Stuffing</p>
+                <div class="checkbox-variant">
+                    <input type="checkbox" name="add" id="cheese" value="cheese">
+                    <label for="cheese">Cheese</label>
+                </div>
+                <div class="checkbox-variant">
+                    <input type="checkbox" name="add" id="salad" value="salad">
+                    <label for="salad">Salad</label>
+                </div>
+                <div class="checkbox-variant">
+                    <input type="checkbox" name="add" id="potato" value="potato">
+                    <label for="potato">Potato</label>
+                </div>
+                <div class="row Topping"></div>
+                <p>Choose Topping</p>
+                <div class="checkbox-variant">
+                    <input type="checkbox" name="add" id="spice" value="spice">
+                    <label for="spice">Spice</label>
+                </div>
+                <div class="checkbox-variant">
+                    <input type="checkbox" name="add" id="mayo" value="mayo">
+                    <label for="mayo">Mayo</label>
+                </div>
+            </div>
+            <div class="submit">
+                <input class="btn" type="submit" value="Create">
+            </div>
+        </fieldset>
+        <br />
+        <div id="result">
+            <div><b>Стоимость:</b> <span id="price">0</span> тугриков</div>
+            <div><b>Калорийность:</b> <span id="calories">0</span> кКал</div>
+        </div>
+    </form>
+<script src="main.js"></script>
+</body>
+</html>
