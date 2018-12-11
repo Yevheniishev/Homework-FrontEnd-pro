@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>DZ-9</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .accord {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           flex-direction: column;
+        }
+        
+        .accord__head {
+            position: relative;
+        width: 70%;
+        padding: 0 10px;  
+        background-color: silver;
+        }
+
+        .accord__head-1 {
+           border-bottom: 1px solid grey;
+        }
+        .accord__head:hover {
+            background-color: grey;
+            
+        }
+        .accord__head::after {
+           content: "\f107";
+           font-family: "FontAwesome";
+           position: absolute;
+           right: 30px;
+           top: 35%;
+           transition: 0.1s;
+
+        }
+        .accord__head--in {
+            border: none;
+           
+        }
+        .accord__head--in::after {
+        transform: rotate(180deg);
+}
+
+        .accord__block {
+            width: 60%;
+            display: flex;
+        justify-content: space-between;
+        }
+
+        
+        input {
+            border: none;
+            border-bottom: 1px solid gray;
+            
+        }
+        .accord__collapse {
+            width: 70%;
+            height: 75px;
+            padding: 10px 10px;
+            display: none;
+            background-color: white;
+        }
+   
+   input {
+       outline: none;
+       padding-top: 25px;
+   }
+   input:focus {
+       border-bottom: 2px solid blue;
+   }
+
+   
+
+   
+        
+        
+
+    
+    </style>
+</head>
+<body>
+    <div class="accord">
+        <div class="accord__head accord__head-1">
+            <div class="accord__block">
+                <p>Personal data</p>
+                <p>Type your name and age</p>
+            </div>  
+        </div>
+        <div class="accord__collapse ">
+                <input type="text" placeholder="First name">
+                <input type="text" placeholder="Age">
+         </div>
+   
+        <div class="accord__head ">
+            <div class="accord__block">
+                <p>Self aware panel</p>
+                <p>Currently I am closed</p>
+            </div>
+        </div>
+        <div class="accord__collapse ">
+                <p>I'm visible because I am open</p>
+         </div>
+    </div>
+
+    
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
